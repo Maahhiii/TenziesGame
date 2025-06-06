@@ -1,0 +1,49 @@
+.die-button {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  margin: 5px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.unicode-die {
+  font-size: 2rem;
+}
+
+.die-svg {
+  width: 40px;
+  height: 40px;
+}
+
+.die-face-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 3px;
+  width: 36px;
+  height: 36px;
+  margin: auto;
+}
+
+.die-face-grid::before {
+  content: "";
+}
+
+.face-1 div:nth-child(5),
+.face-2 div:nth-child(1), .face-2 div:nth-child(9),
+.face-3 div:nth-child(1), .face-3 div:nth-child(5), .face-3 div:nth-child(9),
+.face-4 div:nth-child(1), .face-4 div:nth-child(3), .face-4 div:nth-child(7), .face-4 div:nth-child(9),
+.face-5 div:nth-child(1), .face-5 div:nth-child(3), .face-5 div:nth-child(5), .face-5 div:nth-child(7), .face-5 div:nth-child(9),
+.face-6 div:nth-child(1), .face-6 div:nth-child(4), .face-6 div:nth-child(7), .face-6 div:nth-child(3), .face-6 div:nth-child(6), .face-6 div:nth-child(9) {
+  background-color: #222;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  justify-self: center;
+  align-self: center;
+}
